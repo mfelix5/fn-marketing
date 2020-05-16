@@ -12,7 +12,7 @@ const ContactPage = () => (
       <form
         name="contact"
         method="POST"
-        action="https://naughty-lamarr-f5f136.netlify.app/.netlify/functions/redirect"
+        // action="https://naughty-lamarr-f5f136.netlify.app/.netlify/functions/redirect"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
