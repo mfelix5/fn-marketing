@@ -1,42 +1,67 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import Icon from "../components/icon"
+import Colors from "../constants/Colors"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: Colors.darkBlue,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `.1rem 1.5rem`,
+        display: `flex`,
+        flexDirection: `row`,
+        justifyContent: `space-between`,
+        alignItems: `center`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+      <div
+        style={{
+          display: `flex`,
+          flexDirection: `row`,
+          alignItems: `center`
+        }}
+      >
+        <Icon
           style={{
-            color: `white`,
-            textDecoration: `none`,
           }}
+        />
+        <h2 style={{ margin: 0, padding: `0 0 .2rem .3rem` }}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              fontFamily: 'Roboto',
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h2>
+      </div>
+
+      <h6 style={{
+        margin: 0,
+        paddingRight: `1.45rem`
+      }}
+      ><Link
+        to="/support/"
+        style={{
+          color: Colors.lightBlue,
+          fontFamily: 'Roboto',
+          textDecoration: `none`,
+        }}
         >
-          {siteTitle}
+          Support
         </Link>
-      </h1>
+      </h6>
+
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
