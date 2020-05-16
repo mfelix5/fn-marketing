@@ -8,10 +8,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Farewise" />
     <div style={{
-      maxWidth: `960px`,
+      maxWidth: `1200px`,
       margin: `1rem`
     }}>
-      <h2>Save money on your train commute!</h2>
+      <h2>Save on your train commute!</h2>
       <h4>Farewise recommends the least expensive ticketing options for travel on Long Island Railroad, Metro-North and New Jersey Transit.</h4>
       <Image />
       <Badges />

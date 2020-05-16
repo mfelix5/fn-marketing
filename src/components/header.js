@@ -11,7 +11,6 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        maxWidth: 960,
         padding: `.1rem 1.5rem`,
         display: `flex`,
         flexDirection: `row`,
@@ -35,7 +34,7 @@ const Header = ({ siteTitle }) => (
             to="/"
             style={{
               color: `white`,
-              fontFamily: 'Roboto',
+              fontFamily: `Roboto`,
               textDecoration: `none`,
             }}
           >
@@ -49,14 +48,14 @@ const Header = ({ siteTitle }) => (
         paddingRight: `1.45rem`
       }}
       ><Link
-        to="/support/"
+        to="/contact/"
         style={{
           color: Colors.lightBlue,
-          fontFamily: 'Roboto',
+          fontFamily: `Roboto`,
           textDecoration: `none`,
         }}
         >
-          Support
+          Contact
         </Link>
       </h6>
 
