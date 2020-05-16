@@ -9,7 +9,13 @@ const ContactPage = () => (
     <SEO title="Farewise Support" />
     <div className="page-container">
       <p>If you have any issues or feedback on how to improve Farewise, please let us know. We will get back to you shortly. Thanks!</p>
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form
+        name="contact"
+        method="POST"
+        action="https://naughty-lamarr-f5f136.netlify.app/.netlify/functions/redirect"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
       <input type="hidden" name="form-name" value="contact" />
         <div className="field-container">
 
