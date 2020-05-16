@@ -6,7 +6,7 @@ import Colors from "../constants/Colors"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: Colors.darkBlue,
+      background: Colors.primary,
     }}
   >
     <div
@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
       ><Link
         to="/contact/"
         style={{
-          color: Colors.lightBlue,
+          color: Colors.secondary,
           fontFamily: `Roboto`,
           textDecoration: `none`,
         }}

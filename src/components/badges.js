@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import appStoreBadge from "../images/app-store-badge.svg"
+import URLs from "../constants/URLs"
 
 const Badges = () => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,7 @@ const Badges = () => {
       }}
     >
       <a
-        href="https://apps.apple.com/us/app/farewise/id1511919932"
+        href={URLs.appStoreURL}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -40,7 +41,7 @@ const Badges = () => {
       </a>
 
       <a
-        href="https://play.google.com/store/apps/details?id=io.farewise"
+        href={URLs.playStoreURL}
         target="_blank"
         rel="noopener noreferrer"
       >

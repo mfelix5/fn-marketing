@@ -1,4 +1,4 @@
 export default {
-  darkBlue: "#0B0D35",
-  lightBlue: "#AEDDFF",
+  primary: "#0B0D35", // dark blue
+  secondary: "#AEDDFF", // light blue
 };

@@ -6,11 +6,9 @@
 .field-container {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid lightgray; */
   border-radius: 10px;
   width: 90%;
   margin: auto;
-  /* background-color: lightgray; */
 }
 
 .form-field {
