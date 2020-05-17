@@ -1,13 +1,14 @@
 .page-container {
+  width: 100%;
   max-width: 960px;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .field-container {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 

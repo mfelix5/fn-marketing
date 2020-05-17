@@ -24,12 +24,11 @@ const ContactPage = () => (
             <textarea name="message" id="message" placeholder="Message" />
           <div data-netlify-recaptcha="true"></div>
           <input
+            className="form-field"
             type="submit"
             value="Send Message"
             style={{
-              margin: "auto",
-              borderRadius: 10,
-              width: 365,
+              height: `50px`,
               backgroundColor: Colors.secondary,
               color: Colors.primary
             }}

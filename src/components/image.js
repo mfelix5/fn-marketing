@@ -7,7 +7,7 @@ const Image = () => {
     query {
       farewiseScreens: file(relativePath: { eq: "farewise.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
           }
         }

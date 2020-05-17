@@ -22,8 +22,11 @@ const Badges = () => {
       style={{
         display: `flex`,
         flexDirection: `row`,
+        flexWrap: `wrap`,
+        marginTop: `.5rem`,
         justifyContent: `center`,
-        alignItems: `center`
+        alignItems: `center`,
+        width: `100%`
       }}
     >
       <a
@@ -33,7 +36,8 @@ const Badges = () => {
       >
         <img
           style={{
-            width: 160
+            minWidth: 160,
+            margin: `0 .8rem`
           }}
           src={appStoreBadge}
           alt="Apple app store badge"

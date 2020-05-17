@@ -7,11 +7,15 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: Colors.primary,
+      display: `flex`,
+      justifyContent: `center`
     }}
   >
     <div
       style={{
-        padding: `.1rem 1.5rem`,
+        width: `100%`,
+        maxWidth: `960px`,
+        padding: `.1rem 1.45rem .1rem .5rem`,
         display: `flex`,
         flexDirection: `row`,
         justifyContent: `space-between`,
@@ -22,13 +26,11 @@ const Header = ({ siteTitle }) => (
         style={{
           display: `flex`,
           flexDirection: `row`,
-          alignItems: `center`
+          alignItems: `center`,
+          // width: `1000px`
         }}
       >
-        <Icon
-          style={{
-          }}
-        />
+        <Icon/>
         <h2 style={{ margin: 0, padding: `0 0 .2rem .3rem` }}>
           <Link
             to="/"
@@ -45,7 +47,6 @@ const Header = ({ siteTitle }) => (
 
       <h6 style={{
         margin: 0,
-        paddingRight: `1.45rem`
       }}
       ><Link
         to="/contact/"
