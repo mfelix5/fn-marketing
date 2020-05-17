@@ -24,6 +24,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: `960px`,
+          minHeight: `81vh`,
         }}
       >
         <main>{children}</main>
@@ -36,6 +37,7 @@ const Layout = ({ children }) => {
             width: `100%`,
             alignItems: `center`,
             backgroundColor: Colors.secondary,
+            // backgroundColor: `#FFEED9`,
             height: 70
           }}
         >

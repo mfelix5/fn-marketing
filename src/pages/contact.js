@@ -29,8 +29,12 @@ const ContactPage = () => (
             value="Send Message"
             style={{
               height: `50px`,
+              width: `75%`,
+              margin: `1rem auto`,
               backgroundColor: Colors.secondary,
-              color: Colors.primary
+              // border: `2px solid #4CAF50`,
+              color: Colors.primary,
+              cursor: `pointer`
             }}
            />
         </div>
