@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Colors from "../constants/Colors"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,20 +24,27 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: `960px`,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <footer
+      </div>
+      <footer
           style={{
             display: `flex`,
             flexDirection: `row`,
-            justifyContent: `center`
+            justifyContent: `center`,
+            width: `100%`,
+            alignItems: `center`,
+            backgroundColor: Colors.secondary,
+            height: 70
           }}
         >
-          <h6>© {new Date().getFullYear()}, Farewise</h6>
+          <h6
+            style={{
+              marginBottom: 0,
+            }}
+          >© {new Date().getFullYear()}, Farewise</h6>
         </footer>
-      </div>
     </>
   )
 }

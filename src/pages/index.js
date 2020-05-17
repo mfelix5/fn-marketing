@@ -10,7 +10,9 @@ const IndexPage = () => (
     <div style={{
       width: `100%`,
       maxWidth: `960px`,
-      marginTop: `1rem`
+      backgroundColor: `white`,
+      padding: `1.45rem 1.0875rem 1.45rem`,
+      margin: 0
     }}>
       <h2>Save on your train commute!</h2>
       <h4>Farewise recommends the least expensive ticketing options for travel on Long Island Railroad, Metro-North and New Jersey Transit.</h4>

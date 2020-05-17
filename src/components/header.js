@@ -27,7 +27,6 @@ const Header = ({ siteTitle }) => (
           display: `flex`,
           flexDirection: `row`,
           alignItems: `center`,
-          // width: `1000px`
         }}
       >
         <Icon/>
