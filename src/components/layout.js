@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
-import Colors from "../constants/Colors"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,29 +24,12 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: `960px`,
-          minHeight: `81vh`,
+          minHeight: `83vh`,
         }}
       >
         <main>{children}</main>
       </div>
-      <footer
-          style={{
-            display: `flex`,
-            flexDirection: `row`,
-            justifyContent: `center`,
-            width: `100%`,
-            alignItems: `center`,
-            backgroundColor: Colors.secondary,
-            // backgroundColor: `#FFEED9`,
-            height: 70
-          }}
-        >
-          <h6
-            style={{
-              marginBottom: 0,
-            }}
-          >© {new Date().getFullYear()}, Farewise</h6>
-        </footer>
+      <Footer />
     </>
   )
 }
