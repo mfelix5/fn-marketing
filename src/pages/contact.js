@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./contact.css"
-import Colors from "../constants/Colors"
 
 const ContactPage = () => (
   <Layout>
@@ -24,18 +23,9 @@ const ContactPage = () => (
             <textarea name="message" id="message" placeholder="Message" />
           <div data-netlify-recaptcha="true"></div>
           <input
-            className="form-field"
+            className="form-field button"
             type="submit"
             value="Send Message"
-            style={{
-              height: `50px`,
-              width: `75%`,
-              margin: `1rem auto`,
-              backgroundColor: Colors.secondary,
-              // border: `2px solid #4CAF50`,
-              color: Colors.primary,
-              cursor: `pointer`
-            }}
            />
         </div>
       </form>

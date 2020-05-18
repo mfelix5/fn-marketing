@@ -33,3 +33,12 @@ textarea {
   border-radius: 10px;
   height: 180px;
 }
+
+.button {
+  height: 50px;
+  width: 75%;
+  margin: 1rem auto;
+  background-color:#0B0D35;
+  color: white;
+  cursor: pointer;
+}
