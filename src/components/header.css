@@ -1,0 +1,40 @@
+.nav {
+  background-color: #0B0D35;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  padding: .1rem 1.45rem .1rem .5rem;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-left .link {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.site-title {
+  padding: .95rem 0 0 .3rem;
+}
+
+.nav-item {
+  color: #AEDDFF;
+  margin: 0;
+}
