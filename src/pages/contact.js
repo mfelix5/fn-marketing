@@ -42,6 +42,7 @@ const ContactPage = () => {
                   name="name"
                   id="name"
                   placeholder="Name"
+                  required
                 />
                 <input
                   className="form-field"
@@ -49,8 +50,9 @@ const ContactPage = () => {
                   name="email"
                   id="email"
                   placeholder="Email"
+                  required
                 />
-                <textarea name="message" id="message" placeholder="Message" />
+                <textarea name="message" id="message" placeholder="Message" required />
                 <div data-netlify-recaptcha="true"></div>
                 <input
                   className="form-field button"
